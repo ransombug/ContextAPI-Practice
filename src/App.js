@@ -1,15 +1,17 @@
+import React, { useContext } from 'react'
 import './App.css';
 import AppOne from './Components/AppOne';
 import AppTwo from './Components/AppTwo';
 
-import {Module} from './ContextAPI/Context'
+import {MyContextProvider} from './ContextAPI/Context'
 
-const App = ({moods}) => {
+const App = () => {
+  
     return(
-    <Module.Provider value={moods}>
+    <MyContextProvider>
         <AppOne />
         <AppTwo />
-    </Module.Provider>
+    </MyContextProvider>
   )
 }
 

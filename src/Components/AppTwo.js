@@ -1,12 +1,12 @@
 import React, {useContext} from 'react'
 
-import {Module} from '../ContextAPI/Context'
+// import {Module} from '../ContextAPI/Context'
 
 const AppTwo = () => {
-    const mood = useContext(Module);
+    // const mood = useContext(Module);
     return (
         <div>
-             <h2>{mood}</h2>
+             <h2>{''}</h2>
         </div>
     )
 }

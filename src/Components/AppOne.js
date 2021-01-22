@@ -1,12 +1,13 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 
-import {Module} from '../ContextAPI/Context'
+import { MyContext } from '../ContextAPI/Context'
 
 const AppOne = () => {
-    const mood = useContext(Module);
+    const mood = useContext(MyContext);
     return (
         <div>
-             <h2>{mood.moodone}</h2>
+            <h2>My name is : {mood.first}</h2>
+            <button onClick={() => mood.updateFirst("Shaktiman")} >Click the button to reveal</button>
         </div>
     )
 }
